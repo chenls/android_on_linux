@@ -13,7 +13,7 @@
 #define STACK_SIZE (10 * 1024 * 1024)
 static char container_stack[STACK_SIZE];
 
-char *container_args[] = {"/system/bin/main", NULL};
+char *container_args[] = {"/system/lib64/arm64/houdini64", "/system/bin/main_arm64"};
 
 int container_main(void *arg)
 {
